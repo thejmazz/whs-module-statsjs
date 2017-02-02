@@ -4,7 +4,7 @@
 ## Usage
 
 ```javascript
-const app = new App([
+const app = new WHS.App([
   new WHS.app.ElementModule(), // This module is required
   // other modules
   new StatsModule(StatsModule.codes.fps) // or just "0"
