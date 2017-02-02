@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <script src="https://cdn.rawgit.com/WhitestormJS/whitestorm.js/beta/build/whitestorm.js"></script>
@@ -18,13 +24,62 @@
         }
       })
       .extend([
-        new WHS.controls.OrbitModule()
+        new WHS.controls.OrbitModule(),
+        new StatsModule()
       ])
       .get()
     );
 
-    const sphere = new BasicSphere();
-    sphere.addTo(app);
+    for (let i = 0; i < 100; i++) {
+      new WHS.Sphere({
+        geometry: [1, 64, 64],
+        material: new THREE.MeshLambertMaterial({color: new THREE.Color(Math.random(), Math.random(), Math.random())}),
+        position: [i*2, 0, 0],
+        shadow: {
+          receive: false
+        }
+      }).addTo(app);
+    }
+
+    new WHS.PointLight({
+      light: {
+        distance: 1000,
+        intensity: 1
+      },
+
+      position: [100, 100, 100]
+    }).addTo(app);
+
+    new WHS.PointLight({
+      light: {
+        distance: 1000,
+        color: 0xff0000,
+        intensity: 1
+      },
+
+      position: [-100, 100, 100]
+    }).addTo(app);
+
+    new WHS.PointLight({
+      light: {
+        distance: 1000,
+        color: 0x0000ff,
+        intensity: 1
+      },
+
+      position: [100, -100, 100]
+    }).addTo(app);
+
+    new WHS.PointLight({
+      light: {
+        distance: 1000,
+        color: 0x00ff00,
+        intensity: 2
+      },
+
+      position: [100, 100, -100]
+    }).addTo(app);
+
     app.start();
 
     </script>

@@ -16,6 +16,7 @@
     "babel-preset-stage-1": "^6.22.0",
     "babel-register": "^6.8.0",
     "path": "^0.12.7",
+    "stats.js": "^0.17.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.2.0",
     "whs": "^2.0.0-beta.2"

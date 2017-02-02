@@ -19,7 +19,7 @@ export default {
     path: path.join(__dirname, './build/'),
     filename: 'StatsModule.js',
     libraryTarget: 'umd',
-    library: 'BasicSphere'
+    library: 'StatsModule'
   },
   externals: {
     whs: 'WHS',
