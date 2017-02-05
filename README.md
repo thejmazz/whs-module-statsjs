@@ -1,4 +1,5 @@
 # whs-module-statsjs - Module for JavaScript Performance Monitor
+[![NPM Version](https://img.shields.io/npm/v/whs-module-statsjs.svg?style=flat-square)](https://www.npmjs.com/package/whs-module-statsjs)
 > Based of [stats.js](https://github.com/mrdoob/stats.js). Thanks to [@mrdoob](https://github.com/mrdoob) 
 
 ## Usage
