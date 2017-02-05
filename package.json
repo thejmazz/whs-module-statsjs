@@ -1,5 +1,6 @@
 {
-  "main": "src/index.js",
+  "name": "whs-module-statsjs",
+  "main": "build/StatsModule.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
@@ -20,5 +21,23 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.2.0",
     "whs": "^2.0.0-beta.2"
-  }
+  },
+  "description": "> Based of [stats.js](https://github.com/mrdoob/stats.js). Thanks to [@mrdoob](https://github.com/mrdoob)",
+  "version": "0.1.0",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "stats.js": "^0.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhitestormJS/whs-module-statsjs.git"
+  },
+  "author": "Alexander Buzin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhitestormJS/whs-module-statsjs/issues"
+  },
+  "homepage": "https://github.com/WhitestormJS/whs-module-statsjs#readme"
 }
